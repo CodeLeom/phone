@@ -1,3 +1,40 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -8,6 +45,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .modal {
@@ -15,4 +54,22 @@
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .App {
+    margin-top: 20px;
+  }
+
+  input {
+    width: calc(100% - 20px);
+  }
+
+  button {
+    width: calc(100% - 20px);
+  }
 }
