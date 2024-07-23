@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
-import './OtpModal.css';
 
 const OtpModal = ({ isOpen, closeModal, validateOtp }) => {
   const [otp, setOtp] = useState('');
